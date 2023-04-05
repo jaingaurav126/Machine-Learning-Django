@@ -7,7 +7,7 @@ General Languages and versions
     •	Django version: 1.11.9
     •	OpenCV version: 3.4.0
     •	Sklearn version: 0.19.1
-    •	Mysql Database
+   
 
 Change mysql setting
 
@@ -18,7 +18,8 @@ Change mysql setting
 
 Run -
 
-    python manage.py runserver --nothreading –noreload
+    python manage.py makemigrations
+    python manage.py migrate
+    python manage.py createsuperuser
+    python manage.py runserver
 
-Demo Video
-https://www.youtube.com/watch?v=p70srlZvyvQ&feature=youtu.be
